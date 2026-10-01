@@ -59,7 +59,6 @@ function ProductList() {
         <div>
             <h2 className="h4 mb-3">Products</h2>
 
-            {/* Filters */}
             <div className="row g-2 mb-4">
                 <div className="col-sm-8">
                     <input
@@ -83,7 +82,6 @@ function ProductList() {
                 </div>
             </div>
 
-            {/* Responsive grid: 1 column on phones, 2 on tablets, 3 on wide screens */}
             <div className="row row-cols-1 row-cols-sm-2 row-cols-xl-3 g-3">
                 {filteredProducts.map((product) => (
                     // key goes on the outermost element returned from map
@@ -93,7 +91,6 @@ function ProductList() {
                 ))}
             </div>
 
-            {/* Empty state when the filter matches nothing */}
             {filteredProducts.length === 0 && (
                 <div className="alert alert-secondary mt-3">No products found.</div>
             )}

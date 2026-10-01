@@ -1,8 +1,7 @@
-// src/features/cart/cartSlice.js
 import { createSlice } from '@reduxjs/toolkit';
 
 const initialState = {
-  items: [],        // Array of { id, name, price, quantity }
+  items: [],        
   totalQuantity: 0,
   totalAmount: 0,
 };
@@ -55,8 +54,6 @@ const cartSlice = createSlice({
   },
 });
 
-// Export actions to be dispatched from components
 export const { addToCart, removeFromCart, clearCart } = cartSlice.actions;
 
-// Export the reducer to be wired up in store.js
 export default cartSlice.reducer;

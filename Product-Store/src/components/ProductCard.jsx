@@ -22,7 +22,6 @@ function ProductCard({ product }) {
                     ₹ {product.price.toLocaleString("en-IN")}
                 </p>
 
-                {/* mt-auto pushes the button to the bottom so all cards line up */}
                 <button
                     type="button"
                     className="btn btn-primary mt-auto"

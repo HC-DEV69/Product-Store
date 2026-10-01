@@ -25,6 +25,5 @@ ReactDOM.createRoot(
 
     </Provider>
 
-
     </React.StrictMode>
 )
